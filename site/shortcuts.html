@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="DonutSMP Shortcuts: one-press keybinds for RTP queue, spawn, auction house, and shop.">
+  <title>DonutSMP Shortcuts — Commands &amp; setup</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .shortcut-page { min-height: 75vh; padding-block: 80px; }
+    .shortcut-intro { max-width: 760px; margin-bottom: 42px; }
+    .shortcut-intro h1 { font-size: clamp(42px, 6vw, 68px); }
+    .shortcut-intro p, .shortcut-note { color: var(--muted); }
+    .shortcut-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .shortcut-item { border: 1px solid var(--line); border-radius: 10px; padding: 22px; background: var(--panel); }
+    .shortcut-item h2 { margin: 0 0 8px; font: 20px var(--mono); color: var(--violet); }
+    .shortcut-item p { margin: 0; color: var(--muted); font-size: 13px; }
+    .shortcut-key { display: inline-block; margin-top: 18px; }
+    .shortcut-note { margin-top: 24px; border-left: 2px solid var(--lime); padding: 4px 0 4px 14px; font-size: 12px; }
+    .shortcut-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    @media (max-width: 600px) { .shortcut-list { grid-template-columns: 1fr; } .shortcut-page { padding-block: 55px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="index.html" aria-label="DonutSMP Shortcuts home"><span class="brand-mark" aria-hidden="true">R</span><span>rtpq<span class="brand-period">.</span></span></a>
+    <nav aria-label="Main navigation"><a href="index.html#features">Features</a><a href="shortcuts.html" aria-current="page">Shortcuts</a><a href="index.html#setup">Setup</a></nav>
+    <a class="top-download" href="https://github.com/maxipaul0910-blip/donutsmp-rtpq-site/releases/download/v1.1.0/donutsmp-rtpq-mod-1.1.0.jar">Download <span aria-hidden="true">↓</span></a>
+  </header>
+  <main class="wrap shortcut-page">
+    <div class="shortcut-intro">
+      <div class="section-kicker">DONUTSMP SHORTCUTS · VERSION 1.1.0</div>
+      <h1>Four commands.<br><span>Four key presses.</span></h1>
+      <p>Every shortcut sends its command once per press. Each has its own local cooldown and can be rebound in Minecraft’s Controls menu.</p>
+    </div>
+    <section class="shortcut-list" aria-label="Default DonutSMP commands">
+      <article class="shortcut-item"><h2>/rtpq</h2><p>Request a random teleport queue.</p><kbd class="shortcut-key">R</kbd></article>
+      <article class="shortcut-item"><h2>/spawn</h2><p>Return to the server spawn point.</p><kbd class="shortcut-key">F6</kbd></article>
+      <article class="shortcut-item"><h2>/ah</h2><p>Open the auction house.</p><kbd class="shortcut-key">F7</kbd></article>
+      <article class="shortcut-item"><h2>/shop</h2><p>Open the server shop.</p><kbd class="shortcut-key">F8</kbd></article>
+    </section>
+    <p class="shortcut-note">Server aliases and availability can change. The defaults are configurable in <code>.minecraft/config/rtpq.properties</code>. These are regular client commands; nothing auto-repeats, bypasses server rules, or depends on private server messages.</p>
+    <div class="shortcut-actions"><a class="button button-primary" href="https://github.com/maxipaul0910-blip/donutsmp-rtpq-site/releases/download/v1.1.0/donutsmp-rtpq-mod-1.1.0.jar" download>Download v1.1.0</a><a class="button button-quiet" href="index.html#setup">Installation steps <span aria-hidden="true">→</span></a></div>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">R</span><span>rtpq<span class="brand-period">.</span></span></a><p>Unofficial client-side helper for DonutSMP. Not affiliated with the server.</p><a href="https://github.com/maxipaul0910-blip/donutsmp-rtpq-site">Downloads on GitHub ↗</a><span class="footer-copy">© 2026 · BUILT FOR THE NEXT RTP</span></footer>
+</body>
+</html>
